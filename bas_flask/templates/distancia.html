@@ -1,0 +1,35 @@
+{% extends "layout.html" %} 
+
+{% block container %} 
+
+<h1>Distancia</h1>
+
+    <h2 style="color: rgb(0, 0, 255); font-size: 40px;">Distancia entre dos puntos</h2>
+
+    <div>
+        <h3>Punto 1 (X1, Y1)</h3>
+        <label>X1: </label>
+        <input type="number">
+
+        <label>Y1: </label>
+        <input type="number">
+    </div>
+    <br>
+
+    <div>
+        <h3>Punto 2 (X2, Y2)</h3>
+        <label>X2: </label>
+        <input type="number">
+
+        <label>Y2: </label>
+        <input type="number">
+    </div>
+
+    <br> 
+
+    <button type="button">Calcular Distancia</button>
+    <hr>
+    <h3>Resultado: {{ distancia }}</h3>
+
+
+  {%endblock%}
